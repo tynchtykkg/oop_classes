@@ -1,5 +1,15 @@
-import 'package:oop_classes/oop_classes.dart' as oop_classes;
+void main() {
+  Human tynchtyk = Human(name: 'Tynchtyk', age: 31);
+  print(tynchtyk.name);
+  print(tynchtyk.age);
 
-void main(List<String> arguments) {
-  print('Hello world: ${oop_classes.calculate()}!');
+  Human kauhar = Human(name: 'Kauhar', age: 29);
+  print(kauhar.name);
+  print(kauhar.age);
+}
+
+class Human {
+  Human({required this.name, required this.age});
+  String name;
+  int age;
 }
